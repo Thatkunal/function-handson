@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function</title>
+</head>
+<style>
+  p{
+    background-color: green;
+  }
+</style>
+<body>
+     <h2>
+        Q -1 Create one function with zero parameter having a console statement;</h2>
+        <p>
+    ans1:-
+        function get(){
+         console.log('Hello World')
+            }
+        </p>
+      <h2>
+        Q -2 Create one function which takes two values as a parameter and print the
+        sum of them as "Sum of 3, 4 is 7" </h2>
+        <p>
+    ans2:-
+        function sum(a,b){
+        console.log(a + b)
+        }</p>
+    
+      <h2> Q -3 Create one arrow function</h2>
+        <p>
+    ans3:-
+        var world= ()=>{
+        console.log('world !!')
+            }
+        </p>
+      <h2>
+         <pre>Q -4 "Print output: 
+            var x = 21;
+            var girl = function () {
+                console.log(x);
+                var x = 20;
+            };
+            girl ();"</pre></h2> 
+           <p>ans4: The answer is undefined because
+            As we can see that the variable girl is having a function and the console is Done without any declaration of x so the output will be undefined</p>
+            
+      <h2>Q-5
+        <pre>
+            "Print output: 
+        var x = 21;
+        girl ();
+        console.log(x)
+        function girl() {
+            console.log(x);
+            var x = 20;
+        };
+        </pre></h2>
+        <p>ans5: the output will be  undefined and 21 beacuse var x =21 is defined but console statement is after the girl function and in girl function the initialisation is not done before console so it is undefined </p>
+    <h2>Q-6<pre>"Print output
+    var x = 21;
+    a();
+    b();
+    function a() {    
+     x = 20;
+    console.log(x);
+    };
+    function b() {
+    x = 40;
+   console.log(x);
+};"
+</pre></h2> 
+<p> ans6:-The output will be 20 and 40 beacause var x=21 is in global scope and in global scope there is not console statement and the function are printing the values inside them</p>
+        <h2>Q-7<pre>"Guess the Output
+
+          function FindSum(a, b){
+              return a + b;
+          }
+          function DisplayData(data, batch){
+              console.log(`i am from ${data} and My batch is EA${batch}`)
+          }
+          DisplayData("PrepBytes", FindSum(10, 14));"
+        </pre></h2>
+
+
+      <p>ans7:-"I am from PrepBytes and My batch is EA24" </p>
+          <p>Because 'DisplayData()' function is having two parameters and when DisplayData is invoked the frist parameter says the data and the other one says batch and find sum fucntion is also given in which the paraemter are also given which will calculate and then the values are given to batch  </p>
+
+    <h2>Q-8
+        <pre>Guess the output
+            Abc();
+          const Abc = function(){
+            let value = 20;
+          console.log(value);
+            }
+        </pre></h2>
+
+      <p>ans8 :- Reference Error</p>
+          <p>this code shows Reference Error because the fucntion is stord in a Abc as a value where Abc is like a variable and we cannot call variable we should call a function.</p>
+        <h2>Q-9<pre>Guess the output
+              var a = 10;
+              (function (){
+                console.log(a);
+              var a = 20;
+              })();
+        </pre></h2>
+
+
+      <p>ans9:-Output will be undefined</p>
+          <p>beacuse the console statement is given before the initialisation in the function and for global variable there is not a console statement to print the value of a which is 10in case of global scope.</p>
+<h2> Q-10<pre>    
+                  "Guess the Output
+                const greet =  function(name){
+                    return function(m){   
+                        console.log(`Hi!! ${name}, ${m}`);
+                    }
+                }
+                const greet_message = greet('EA24');
+                greet_message("Welcome To PrepBytes")
+        </pre></h2>
+      <p>ans10:- 'Hi!! EA24, Welcome To PrepBytes'</p>
+   <p> Here we are declaring a variable "greet_message" whose value is a function "greet" whose parameter is ('EA24') and then calling that Variable "Greet_messege" with Parameter('Welcome To PrepBytes'). </p> 
+</body>
+</html>
